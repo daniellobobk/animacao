@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+.bloco {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background:blue;
+    border-radius:3%;
+    animation-name: animacao;
+    animation-duration: 1s;
+    animation-delay: 2px;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+    box-shadow: 10px 10px 5px black;
+    transition: all 1s linear;
+    word-wrap: break-word;
+}
+
+.bloco:hover {
+    border-radius: 0%;
+}
+
+@keyframes animacao {
+    0% {background-color: blueviolet; top: 0; left:0;}
+    15% {background-color: brown;top: 0; left: 1000px;}
+    25% {background-color: darkcyan;top: 250px; left:500px;}
+    50% {background-color: aqua;left: 1000px; top: 500px;}
+    75% {background-color: darkcyan;top: 500px; left: 0px;}
+    85% {background-color: darkcyan;top: 250px; left:500px;}
+    100% {background-color: seagreen;top: 0; left:0;}
+    
+}
